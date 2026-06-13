@@ -1,0 +1,52 @@
+{
+  "users": [
+    { "id": 1, "nomeCompleto": "Ana Silva", "email": "ana@email.com", "senhaHash": "123", "dataCadastro": "2026-06-01" },
+    { "id": 2, "nomeCompleto": "Bruno Lima", "email": "bruno@email.com", "senhaHash": "123", "dataCadastro": "2026-06-02" }
+  ],
+  "categories": [
+    { "id": 1, "nome": "Programação", "descricao": "Cursos de lógica e código" },
+    { "id": 2, "nome": "Banco de Dados", "descricao": "Cursos sobre dados e SQL" }
+  ],
+  "courses": [
+    { "id": 1, "titulo": "React para Iniciantes", "descricao": "Curso básico de React", "idInstrutor": 1, "idCategoria": 1, "nivel": "Iniciante", "dataPublicacao": "2026-06-01", "totalAulas": 4, "totalHoras": 8 },
+    { "id": 2, "titulo": "SQL Básico", "descricao": "Introdução ao SQL", "idInstrutor": 2, "idCategoria": 2, "nivel": "Iniciante", "dataPublicacao": "2026-06-03", "totalAulas": 3, "totalHoras": 6 }
+  ],
+  "modules": [
+    { "id": 1, "idCurso": 1, "titulo": "Fundamentos", "ordem": 1 },
+    { "id": 2, "idCurso": 1, "titulo": "Componentes", "ordem": 2 },
+    { "id": 3, "idCurso": 2, "titulo": "Select e Where", "ordem": 1 }
+  ],
+  "lessons": [
+    { "id": 1, "idModulo": 1, "titulo": "O que é React?", "tipoConteudo": "Texto", "urlConteudo": "#", "duracaoMinutos": 20, "ordem": 1 },
+    { "id": 2, "idModulo": 1, "titulo": "Criando projeto", "tipoConteudo": "Vídeo", "urlConteudo": "#", "duracaoMinutos": 25, "ordem": 2 },
+    { "id": 3, "idModulo": 2, "titulo": "Props", "tipoConteudo": "Texto", "urlConteudo": "#", "duracaoMinutos": 30, "ordem": 1 }
+  ],
+  "enrollments": [
+    { "id": 1, "idUsuario": 1, "idCurso": 1, "dataMatricula": "2026-06-05", "dataConclusao": null }
+  ],
+  "progress": [
+    { "idUsuario": 1, "idAula": 1, "dataConclusao": "2026-06-06", "status": "Concluído" }
+  ],
+  "evaluations": [
+    { "id": 1, "idUsuario": 1, "idCurso": 1, "nota": 5, "comentario": "Ótimo curso!", "dataAvaliacao": "2026-06-07" }
+  ],
+  "tracks": [
+    { "id": 1, "titulo": "Trilha Front-end", "descricao": "Percurso para começar no front-end", "idCategoria": 1 }
+  ],
+  "trackCourses": [
+    { "idTrilha": 1, "idCurso": 1, "ordem": 1 }
+  ],
+  "certificates": [
+    { "id": 1, "idUsuario": 1, "idCurso": 1, "idTrilha": null, "codigoVerificacao": "CERT-ABC-123", "dataEmissao": "2026-06-08" }
+  ],
+  "plans": [
+    { "id": 1, "nome": "Mensal", "descricao": "Acesso por 1 mês", "preco": 29.9, "duracaoMeses": 1 },
+    { "id": 2, "nome": "Anual", "descricao": "Acesso por 12 meses", "preco": 199.9, "duracaoMeses": 12 }
+  ],
+  "subscriptions": [
+    { "id": 1, "idUsuario": 1, "idPlano": 1, "dataInicio": "2026-06-01", "dataFim": "2026-07-01" }
+  ],
+  "payments": [
+    { "id": 1, "idAssinatura": 1, "valorPago": 29.9, "dataPagamento": "2026-06-01", "metodoPagamento": "PIX", "idTransacaoGateway": "TXN-001" }
+  ]
+}
